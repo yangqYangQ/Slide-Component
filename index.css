@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.mySlides {
+    overflow: hidden;
+    position: relative;
+}
+
+.mySlides > ol {
+    display: flex;
+    transition: transform .5s;
+}
+
+.mySlides > ol > li > img {
+    vertical-align: top;
+}
+
+.mySlides > .buttons {
+    display: inline-block;
+}
+
+.mySlides > .buttons > .icon {
+    font-size: 2em;
+}
+
+.mySlides > .buttons:hover{
+    cursor: pointer;
+}
+
+.mySlides > .buttons.prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.mySlides > .buttons.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
